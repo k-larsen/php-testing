@@ -1,6 +1,6 @@
 <?php
 require_once '/Users/ktl99548/Documents/php-testing/vendor/autoload.php';
-$loader = new Twig_Loader_Filesystem('/Users/ktl99548/Documents/php-testing/twig/');
+$loader = new Twig_Loader_Filesystem('/Users/ktl99548/Documents/php-testing/');
 $twig = new Twig_Environment($loader);
 
 $color_array = array();
@@ -14,7 +14,6 @@ for($i = 0; $i < 8; $i++){
 	}
 }
 
-echo "Hello";
 $html = $twig->render('board.html', array(
 	'color_array' => $color_array
 	));
