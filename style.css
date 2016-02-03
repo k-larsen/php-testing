@@ -1,0 +1,16 @@
+.black{
+  background-color: black;
+}
+
+.white{
+  background-color: white;
+}
+
+table{
+  width: 270px;
+}
+
+td{
+  width: 30px;
+  height: 30px;
+}

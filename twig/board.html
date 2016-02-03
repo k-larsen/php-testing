@@ -1,0 +1,23 @@
+<! DOCTYPE html>
+<html>
+  <link = "text/css" rel = "stylesheet" href = "style.css"/>
+  <title>ChessBoard</title>
+  <body>
+    <h1>Chess Board</h1>
+    <table>
+
+        {% for row in color_array %}
+            <tr>
+                {% for column in row %}
+                  {% if column == 'b' %}
+                    <td class = "black"></td>
+                  {% endif %}
+                  {% if column == 'w'%}
+                    <td class = "white"></td>
+                    {% endif %}
+                  {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+  </body>
+</html>
