@@ -14,6 +14,7 @@ for($i = 0; $i < 8; $i++){
 	}
 }
 
+echo "Hello";
 $html = $twig->render('board.html', array(
 	'color_array' => $color_array
 	));
