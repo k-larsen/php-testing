@@ -9,10 +9,10 @@
         {% for row in color_array %}
             <tr>
                 {% for column in row %}
-                  {% if column == 'b' %}
+                  {% if column == 'b' %} <!-- square is black -->
                     <td class = "black"></td>
                   {% else %}
-                    <td class = "white"></td>
+                    <td class = "white"></td> <!-- square is white -->
                     {% endif %}
                   {% endfor %}
             </tr>
@@ -20,3 +20,4 @@
     </table>
   </body>
 </html>
+ g
