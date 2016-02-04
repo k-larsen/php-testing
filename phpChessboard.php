@@ -6,7 +6,7 @@ $twig = new Twig_Environment($loader);
 $color_array = array();
 for($i = 0; $i < 8; $i++){
 	for($j = 0; $j < 8; $j++){
-		if($i+$j % 2 != 0){
+		if(($i+$j) % 2 != 0){
 			$color_array[$i][$j] = 'b';
 		}else{
 			$color_array[$i][$j] = 'w';

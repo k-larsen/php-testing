@@ -11,8 +11,7 @@
                 {% for column in row %}
                   {% if column == 'b' %}
                     <td class = "black"></td>
-                  {% endif %}
-                  {% if column == 'w'%}
+                  {% else %}
                     <td class = "white"></td>
                     {% endif %}
                   {% endfor %}
